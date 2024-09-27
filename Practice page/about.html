@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О нас</title>
-    <!-- Подключаем Bootstrap через CDN -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Навигационная панель -->
-    <header id="main-header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">Исследование Животных</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <header id="main-header" class="bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Исследование Вымерающих Животных</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">Главная</a>
+                            <a class="nav-link" href="index.html">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a href="about.html" class="nav-link">О нас</a>
+                            <a class="nav-link" href="about.html">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Контакты</a>
+                            <a class="nav-link" href="contact.html">Контакты</a>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
-    <!-- Основной контент -->
     <main>
         <section class="about-section py-5">
             <div class="container">
-                <h2>О нашей организации</h2>
-                <p>Мы — команда исследователей и защитников вымирающих животных. Наша цель — сохранить редкие виды и их естественные среды обитания. Мы работаем над различными проектами, которые включают полевые исследования, образовательные программы и защиту мест обитания.</p>
-                <img src="https://avatars.mds.yandex.net/i?id=65b81d3ff6f2406e80c96d05aba11474_l-10901265-images-thumbs&n=13" alt="Исследователи" class="about-image img-fluid">
+                <h2 class="text-center mb-4">О нашей организации</h2>
+                <p>Мы — команда исследователей и защитников вымирающих животных. Наша цель — сохранить редкие виды и их естественные среды обитания.</p>
+                <img src="https://avatars.mds.yandex.net/i?id=65b81d3ff6f2406e80c96d05aba11474_l-10901265-images-thumbs&n=13" alt="Исследователи" class="img-fluid rounded mt-4">
             </div>
         </section>
     </main>
 
-    <!-- Подвал -->
-    <footer id="footer" class="bg-light text-center py-3">
-        <div class="container">
-            <p>© 2024 Исследование Вымерающих Животных. Urgenishbaev Abylai SE-2318.</p>
+    <footer id="footer" class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>© 2024 Исследование Вымерающих Животных. Urgenishbaev Abylai SE-2318</p>
         </div>
     </footer>
 
-    <!-- Подключаем скрипты Bootstrap -->
+    <!-- Подключение Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -1,134 +1,118 @@
-/* Основные стили для всего сайта */
+/* Основные стили для сайта с дополнительными улучшениями, если нужно */
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Стили для заголовка и навигации */
 header {
-    background: linear-gradient(to right, #3498db, #8e44ad);
-    color: #fff;
-    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5em;
+h1, h2, h3 {
+    color: #333;
 }
 
-#navbar {
-    margin-top: 10px;
+p {
+    color: #555;
+}
+
+/* Кастомизация навбара */
+.navbar-brand {
+    font-size: 1.8rem;
 }
 
 .nav-link {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 600;
+    font-size: 1.2rem;
 }
 
-.nav-link:hover {
-    text-decoration: underline;
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffc107;
 }
 
-/* Стили для главной секции */
+/* Герой-секция */
 .hero-section {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #232121;
-    padding: 60px 20px;
+    background-color: #f8f9fa;
     text-align: center;
 }
 
-.hero-content {
-    max-width: 600px;
-    margin: 0 auto;
+.hero-section h2 {
+    font-size: 2.5rem;
+    color: #212529;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #e74c3c;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+.hero-section p {
+    font-size: 1.1rem;
+    color: #6c757d;
 }
 
-.cta-button:hover {
-    background: #c0392b;
+/* Стили для формы */
+.contact-section form .form-control {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-/* Стили для информационных секций */
-.info-section {
-    padding: 40px 20px;
-    background: #fff;
-    text-align: center;
+.contact-section form button {
+    background-color: #17a2b8;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
-.info-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.contact-section form button:hover {
+    background-color: #138496;
 }
 
-.info-card {
-    background: #ecf0f1;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    width: 300px;
-}
-
-.info-card h3 {
-    margin-top: 0;
-}
-
-.info-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 10px;
-}
-
-/* Стили для страницы "О нас" и "Контакты" */
-.about-section, .contact-section {
-    padding: 20px 20px;
-    background: #fff;
-    text-align: left;
-}
-
-.about-image, .contact-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-/* Стили для подвала */
+/* Footer стили */
 footer {
-    background: #333;
-    color: #fff;
     text-align: center;
-    padding: 20px 0;
 }
 
-/* Адаптивность */
+footer p {
+    margin: 0;
+    color: #ccc;
+}
+
+/* Настройки карусели */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Стили для карточек */
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Мобильная адаптация */
 @media (max-width: 768px) {
-    .info-cards {
-        flex-direction: column;
-        align-items: center;
+    .hero-section h2 {
+        font-size: 2rem;
     }
 
-    .info-card {
-        width: 80%;
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .contact-section form {
+        width: 90%;
     }
 }
